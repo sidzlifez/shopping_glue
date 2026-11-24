@@ -1,0 +1,102 @@
+backend:
+  name: github
+  # REPLACE with your GitHub username and repo name:
+  repo: YOUR_GITHUB_USERNAME/shopping-glue
+  branch: main
+  # REPLACE with your live Cloudflare Pages URL (no trailing slash):
+  base_url: https://YOUR-SITE.pages.dev
+  auth_endpoint: api/auth
+
+# Direct Upload (No Cloudinary) — saves photos straight into GitHub & Cloudflare Pages CDN
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: https://YOUR-SITE.pages.dev
+display_url: https://YOUR-SITE.pages.dev
+
+collections:
+  - name: "store_data"
+    label: "Shopping_Glue Store Manager"
+    files:
+      - name: "store"
+        label: "Store Settings, Sub-Tags & Products"
+        file: "data/store.json"
+        fields:
+          - label: "Store Settings"
+            name: "settings"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Store Name", name: "store_name", widget: "string", default: "Shopping_Glue" }
+              - { label: "Top Announcement Bar", name: "announcement_bar", widget: "string", default: "HYPE FLAME DROP LIVE • UPI (₹0 FEE) & COD (+₹50) • SHIPPING CONFIRMED ON WHATSAPP" }
+              - { label: "Hero Badge", name: "hero_badge", widget: "string", default: "DROP 01 // DARK STREETWEAR" }
+              - { label: "Hero Headline", name: "hero_title", widget: "string", default: "STICK TO YOUR STREET STYLE." }
+              - { label: "Hero Subtitle", name: "hero_subtitle", widget: "text", default: "Heavyweight oversized shirts & bold statement footwear built for the streets. Instant WhatsApp checkout with UPI & COD." }
+              - { label: "Brand Tagline", name: "tagline", widget: "string", default: "Stick to Your Style." }
+              - { label: "Exchange / Policy Badge", name: "exchange_badge", widget: "string", default: "7-Day Easy Size Exchange" }
+              - { label: "WhatsApp Number (Country code + number, no +)", name: "whatsapp_number", widget: "string", default: "919856701460" }
+              - { label: "Contact Email", name: "email", widget: "string", default: "sidzlifez@gmail.com" }
+              - { label: "COD Extra Charge (INR ₹)", name: "cod_fee", widget: "number", value_type: "int", min: 0, default: 50 }
+              - { label: "Shipping Policy Note", name: "shipping_note", widget: "string", default: "Shipping calculated & confirmed on WhatsApp" }
+              - { label: "UPI Payment Note", name: "upi_note", widget: "string", default: "Zero extra charge — pay via GPay, PhonePe, or Paytm UPI on WhatsApp" }
+              - label: "Social Links"
+                name: "socials"
+                widget: "object"
+                fields:
+                  - { label: "YouTube URL", name: "youtube", widget: "string", default: "https://youtube.com/@SiDz_LiFeZ" }
+                  - { label: "Instagram URL", name: "instagram", widget: "string", default: "https://instagram.com/sidz_lifez/" }
+                  - { label: "Facebook URL", name: "facebook", widget: "string", default: "https://facebook.com/siddharth.thapa.714" }
+
+          - label: "Streetwear Sub-Tags (Shop Filters)"
+            name: "sub_tags"
+            widget: "list"
+            collapsed: true
+            summary: "{{fields.name}} ({{fields.category}})"
+            hint: "Add, rename, or delete streetwear sub-tags here. They automatically update the Shop filter bar."
+            fields:
+              - { label: "Sub-Tag Name", name: "name", widget: "string", hint: "e.g., Oversized Tees, Casual Shirts, Sneakers, High-Tops, Boots" }
+              - label: "Parent Category"
+                name: "category"
+                widget: "select"
+                options: ["Shirts", "Shoes"]
+
+          - label: "Products (Shirts & Shoes)"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} — ₹{{fields.price}} ({{fields.category}} / {{fields.sub_tag}})"
+            fields:
+              - { label: "Product ID (Unique Slug)", name: "id", widget: "string", hint: "No spaces, e.g., inferno-oversized-tee-01" }
+              - { label: "Product Name", name: "name", widget: "string" }
+              - label: "Main Category"
+                name: "category"
+                widget: "select"
+                options: ["Shirts", "Shoes"]
+              - { label: "Streetwear Sub-Tag", name: "sub_tag", widget: "string", hint: "Match a sub-tag name above (e.g., Oversized Tees, Casual Shirts, Sneakers, High-Tops, Boots)" }
+              - { label: "Selling Price (₹)", name: "price", widget: "number", value_type: "int", min: 1 }
+              - { label: "MRP / Original Price (₹) — Optional", name: "mrp", widget: "number", value_type: "int", required: false }
+              - label: "Drop Badge"
+                name: "badge"
+                widget: "select"
+                options: ["None", "NEW DROP", "HOT", "LIMITED", "BESTSELLER"]
+                default: "NEW DROP"
+              - { label: "Featured on Home Page", name: "featured", widget: "boolean", default: true }
+              - { label: "In Stock", name: "in_stock", widget: "boolean", default: true }
+              - { label: "Product Description", name: "description", widget: "text" }
+              - { label: "Fabric / Material Details", name: "material", widget: "string", required: false, hint: "e.g., 240 GSM 100% French Terry Cotton or Vegan Suede & Chunky EVA Sole" }
+              - label: "Available Colors"
+                name: "colors"
+                widget: "list"
+                summary: "{{fields.name}} ({{fields.hex}})"
+                fields:
+                  - { label: "Color Name", name: "name", widget: "string", hint: "e.g., Obsidian Black, Flame Red" }
+                  - { label: "Swatch Color", name: "hex", widget: "color", default: "#111111" }
+              - label: "Available Sizes"
+                name: "sizes"
+                widget: "list"
+                hint: "For SHIRTS enter: S, M, L, XL, XXL. For SHOES enter Indian/UK numbers: 5, 6, 7, 8, 9, 10, 11, 12 (auto-converts to IND / UK / EU / US on the website!)."
+                field: { label: "Size", name: "size", widget: "string" }
+              - label: "Product Photos (Direct Upload)"
+                name: "images"
+                widget: "list"
+                hint: "Tip: Compress photos to WebP/JPG (~150-250 KB via Squoosh.app) before uploading for blazing-fast mobile load times."
+                field: { label: "Photo", name: "image", widget: "image" }

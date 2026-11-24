@@ -1,0 +1,249 @@
+{
+  "settings": {
+    "store_name": "Shopping_Glue",
+    "announcement_bar": "HYPE FLAME DROP LIVE • UPI (₹0 FEE) & COD (+₹50) • SHIPPING CONFIRMED ON WHATSAPP",
+    "hero_badge": "DROP 01 // DARK STREETWEAR",
+    "hero_title": "STICK TO YOUR STREET STYLE.",
+    "hero_subtitle": "Heavyweight oversized shirts & bold statement footwear built for the streets. Pick your exact fit and confirm straight on WhatsApp.",
+    "tagline": "Stick to Your Style.",
+    "exchange_badge": "7-Day Easy Size Exchange",
+    "whatsapp_number": "919856701460",
+    "email": "sidzlifez@gmail.com",
+    "cod_fee": 50,
+    "shipping_note": "Shipping calculated & confirmed on WhatsApp",
+    "upi_note": "Zero extra charge — pay via GPay, PhonePe, or Paytm UPI on WhatsApp",
+    "socials": {
+      "youtube": "https://youtube.com/@SiDz_LiFeZ",
+      "instagram": "https://instagram.com/sidz_lifez/",
+      "facebook": "https://facebook.com/siddharth.thapa.714"
+    }
+  },
+  "sub_tags": [
+    {
+      "name": "Oversized Tees",
+      "category": "Shirts"
+    },
+    {
+      "name": "Casual Shirts",
+      "category": "Shirts"
+    },
+    {
+      "name": "Flannels",
+      "category": "Shirts"
+    },
+    {
+      "name": "Sneakers",
+      "category": "Shoes"
+    },
+    {
+      "name": "High-Tops",
+      "category": "Shoes"
+    },
+    {
+      "name": "Boots",
+      "category": "Shoes"
+    }
+  ],
+  "products": [
+    {
+      "id": "inferno-oversized-tee",
+      "name": "Inferno Flame Oversized Tee",
+      "category": "Shirts",
+      "sub_tag": "Oversized Tees",
+      "price": 899,
+      "mrp": 1499,
+      "badge": "NEW DROP",
+      "featured": true,
+      "in_stock": true,
+      "description": "Drop-shoulder heavyweight streetwear tee crafted from 240 GSM bio-washed cotton. Engineered for a boxy, structured drape with crack-resistant puff print detailing.",
+      "material": "240 GSM 100% Super-Combed French Terry Cotton",
+      "colors": [
+        {
+          "name": "Obsidian Black",
+          "hex": "#111115"
+        },
+        {
+          "name": "Charcoal Wash",
+          "hex": "#2E2E36"
+        },
+        {
+          "name": "Crimson Ember",
+          "hex": "#B91C1C"
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "/assets/uploads/sample-tee-flame.svg",
+        "/assets/uploads/sample-tee-flame-back.svg"
+      ]
+    },
+    {
+      "id": "blaze-chunky-sneaker",
+      "name": "Blaze Runner V2 Chunky Sneakers",
+      "category": "Shoes",
+      "sub_tag": "Sneakers",
+      "price": 2199,
+      "mrp": 3499,
+      "badge": "HOT",
+      "featured": true,
+      "in_stock": true,
+      "description": "High-impact dark streetwear runners built with layered vegan suede overlays, breathable ballistic mesh, and a shock-absorbing 4.5cm chunky EVA outsole.",
+      "material": "Vegan Suede + Breathable Mesh + Chunky EVA Sole",
+      "colors": [
+        {
+          "name": "Matte Black / Flame",
+          "hex": "#18181B"
+        },
+        {
+          "name": "Stealth Grey / Red",
+          "hex": "#3F3F46"
+        }
+      ],
+      "sizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": [
+        "/assets/uploads/sample-sneaker-blaze.svg",
+        "/assets/uploads/sample-sneaker-blaze-side.svg"
+      ]
+    },
+    {
+      "id": "obsidian-cargo-shirt",
+      "name": "Obsidian Utility Cargo Shirt",
+      "category": "Shirts",
+      "sub_tag": "Casual Shirts",
+      "price": 1299,
+      "mrp": 1999,
+      "badge": "BESTSELLER",
+      "featured": true,
+      "in_stock": true,
+      "description": "Relaxed boxy utility overshirt featuring twin gusseted chest pockets, matte snap buttons, and heavyweight twill weave. Wear it solo or layered open over a tee.",
+      "material": "280 GSM Heavy Cotton Twill",
+      "colors": [
+        {
+          "name": "Jet Black",
+          "hex": "#0F0F12"
+        },
+        {
+          "name": "Olive Tactical",
+          "hex": "#3F4A3C"
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "/assets/uploads/sample-shirt-cargo.svg"
+      ]
+    },
+    {
+      "id": "obsidian-hightop-kicks",
+      "name": "Obsidian Street High-Tops",
+      "category": "Shoes",
+      "sub_tag": "High-Tops",
+      "price": 2499,
+      "mrp": 3999,
+      "badge": "LIMITED",
+      "featured": true,
+      "in_stock": true,
+      "description": "Court-inspired dark high-top sneakers with padded ankle collar, reinforced toe-box perforations, and high-grip vulcanized street sole.",
+      "material": "Matte PU Leather + Cushioned Collar + Rubber Cupsole",
+      "colors": [
+        {
+          "name": "Black / Crimson",
+          "hex": "#991B1B"
+        },
+        {
+          "name": "Triple Black",
+          "hex": "#121212"
+        }
+      ],
+      "sizes": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": [
+        "/assets/uploads/sample-hightop-obsidian.svg"
+      ]
+    },
+    {
+      "id": "ember-check-flannel",
+      "name": "Ember Heavy Check Flannel Shirt",
+      "category": "Shirts",
+      "sub_tag": "Flannels",
+      "price": 1199,
+      "mrp": 1799,
+      "badge": "NEW DROP",
+      "featured": false,
+      "in_stock": true,
+      "description": "Brushed heavyweight flannel in a signature dark flame check pattern. Built for crisp evenings, layered street fits, and everyday comfort.",
+      "material": "100% Brushed Cotton Flannel",
+      "colors": [
+        {
+          "name": "Black / Flame Orange",
+          "hex": "#EA580C"
+        },
+        {
+          "name": "Charcoal / Crimson",
+          "hex": "#BE123C"
+        }
+      ],
+      "sizes": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "images": [
+        "/assets/uploads/sample-flannel-ember.svg"
+      ]
+    },
+    {
+      "id": "apex-lug-combat-boot",
+      "name": "Apex Lug-Sole Street Boots",
+      "category": "Shoes",
+      "sub_tag": "Boots",
+      "price": 2799,
+      "mrp": 4299,
+      "badge": "LIMITED",
+      "featured": false,
+      "in_stock": true,
+      "description": "All-weather dark streetwear combat boots with aggressive deep-lug traction outsole, speed-lace metal hooks, and water-resistant matte finish.",
+      "material": "Water-Resistant Matte Leatherette + Heavy Lug Sole",
+      "colors": [
+        {
+          "name": "Matte Obsidian",
+          "hex": "#16161A"
+        }
+      ],
+      "sizes": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "images": [
+        "/assets/uploads/sample-boot-inferno.svg"
+      ]
+    }
+  ]
+}
