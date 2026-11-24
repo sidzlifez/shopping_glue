@@ -17,17 +17,17 @@
   --card-shadow: 0 14px 36px rgba(17, 24, 39, 0.08);
   --upi-text: #15803D;
 
-  /* === ACTIVE PALETTE: 1. GLACIER AZURE & LILAC (Swap with Palette 2, 3, or 4 above) === */
-  --accent-1: #0EA5E9;
-  --accent-2: #6366F1;
-  --accent-3: #C084FC;
-  --accent-text: #4F46E5;
-  --accent-gradient: linear-gradient(135deg, #38BDF8 0%, #6366F1 52%, #C084FC 100%);
-  --accent-soft: rgba(99, 102, 241, 0.10);
-  --accent-border: rgba(99, 102, 241, 0.38);
-  --accent-glow: 0 10px 30px rgba(99, 102, 241, 0.28);
-  --hero-glow-1: rgba(56, 189, 248, 0.22);
-  --hero-glow-2: rgba(192, 132, 252, 0.20);
+  /* === ACTIVE PALETTE: Champagne Rose & Gold (Swap with Palette 2, 3, or 4 above) === */
+  --accent-1: #FB7185;
+  --accent-2: #F472B6;
+  --accent-3: #F59E0B;
+  --accent-text: #BE185D;
+  --accent-gradient: linear-gradient(135deg, #FB7185 0%, #F472B6 50%, #F59E0B 100%);
+  --accent-soft: rgba(244, 114, 182, 0.11);
+  --accent-border: rgba(251, 113, 133, 0.40);
+  --accent-glow: 0 10px 30px rgba(244, 114, 182, 0.30);
+  --hero-glow-1: rgba(251, 113, 133, 0.22);
+  --hero-glow-2: rgba(245, 158, 11, 0.18);
 
   --success: #16A34A;
   --danger: #DC2626;
