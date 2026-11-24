@@ -1,10 +1,10 @@
 backend:
   name: github
   # REPLACE with your GitHub username and repo name:
-  repo: YOUR_GITHUB_USERNAME/shopping-glue
+  repo: sidzlifez/shopping-glue
   branch: main
   # REPLACE with your live Cloudflare Pages URL (no trailing slash):
-  base_url: https://YOUR-SITE.pages.dev
+  base_url: https://shopping-glue.pages.dev
   auth_endpoint: api/auth
 
 # Direct Upload (No Cloudinary) — saves photos straight into GitHub & Cloudflare Pages CDN
