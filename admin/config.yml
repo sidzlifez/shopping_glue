@@ -11,8 +11,8 @@ backend:
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
-site_url: https://YOUR-SITE.pages.dev
-display_url: https://YOUR-SITE.pages.dev
+site_url: https://shopping-glue.pages.dev/
+display_url: https://shopping-glue.pages.dev/
 
 collections:
   - name: "store_data"
