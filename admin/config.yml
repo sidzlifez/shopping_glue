@@ -1,7 +1,7 @@
 backend:
   name: github
   # REPLACE with your GitHub username and repo name:
-  repo: sidzlifez/shopping-glue
+  repo: sidzlifez/shopping_glue
   branch: main
   # REPLACE with your live Cloudflare Pages URL (no trailing slash):
   base_url: https://shopping-glue.pages.dev
